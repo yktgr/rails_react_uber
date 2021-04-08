@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(version: 2021_02_23_133025) do
     t.index ["restaurant_id"], name: "index_orders_on_restaurant_id"
   end
 
-  create_table "restrants", force: :cascade do |t|
+  create_table "restaurants", force: :cascade do |t|
     t.string "name", null: false
     t.integer "fee", default: 0, null: false
     t.integer "time_required", null: false
